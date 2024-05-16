@@ -37,7 +37,6 @@ contract Blacklist is IMinimalBlacklist, AccessControlEnumerable {
     /// @notice Event emitted when an address is removed from the blacklist
     event UnBlacklisted(address indexed _account);
 
-    
     /// @notice Construct a new Blacklist contract
     /// @param _admin Blacklist admin
     /// @param _updater Initial updater address
