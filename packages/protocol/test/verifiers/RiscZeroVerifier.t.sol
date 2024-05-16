@@ -12,10 +12,10 @@ contract MockRiscZeroRemoteVerifier is IRiscZeroReceiptVerifier {
     }
 
     function verify(
-        bytes calldata, /*seal*/
-        bytes32, /*imageId*/
-        bytes32, /*postStateDigest*/
-        bytes32 /*journalDigest*/
+        bytes calldata, // seal
+        bytes32, // imageId
+        bytes32, // postStateDigest
+        bytes32 // journalDigest
     )
         external
         view

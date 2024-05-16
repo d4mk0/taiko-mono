@@ -38,10 +38,10 @@ contract NonNftContract {
 
 contract SkipProofCheckSignal is SignalService {
     function proveSignalReceived(
-        uint64, /*srcChainId*/
-        address, /*app*/
-        bytes32, /*signal*/
-        bytes calldata /*proof*/
+        uint64, // srcChainId
+        address, // app
+        bytes32, // signal
+        bytes calldata // proof
     )
         public
         pure

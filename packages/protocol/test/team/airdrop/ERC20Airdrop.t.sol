@@ -6,9 +6,9 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
 contract MockERC20Airdrop is ERC20Airdrop {
     function _verifyMerkleProof(
-        bytes32[] calldata, /*proof*/
-        bytes32, /*merkleRoot*/
-        bytes32 /*value*/
+        bytes32[] calldata, // proof
+        bytes32, // merkleRoot
+        bytes32 // value
     )
         internal
         pure

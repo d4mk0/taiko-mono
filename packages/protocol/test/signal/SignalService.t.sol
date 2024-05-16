@@ -6,12 +6,12 @@ import "forge-std/src/console2.sol";
 
 contract MockSignalService is SignalService {
     function _verifyHopProof(
-        uint64, /*chainId*/
-        address, /*app*/
-        bytes32, /*signal*/
-        bytes32, /*value*/
-        HopProof memory, /*hop*/
-        address /*relay*/
+        uint64, // chainId
+        address, // app
+        bytes32, // signal
+        bytes32, // value
+        HopProof memory, // hop
+        address // relay
     )
         internal
         pure
@@ -587,7 +587,7 @@ contract TestSignalService is TaikoTest {
         addressManager.setAddress(srcChainId, "signal_service", randAddress());
         for (uint256 i; i < proofs.length; ++i) {
             addressManager.setAddress(
-                proofs[i].chainId, "signal_service", randAddress() /*relay1*/
+                proofs[i].chainId, "signal_service", randAddress() // relay1
             );
         }
         vm.stopPrank();
